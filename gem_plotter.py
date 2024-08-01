@@ -23,7 +23,7 @@ def plot_GEM_superchamber_alignment(dfs, endcap, station, ring, par, saveplot=Fa
     plt.legend()
     plt.xlabel('GEM SuperChamber')
     plt.ylabel(par + ' [cm] or [rad]')
-    plt.title(f'Local {par} for Endcap {endcap}, Station {station}, Ring {ring}')
+    plt.title(f'Parameter {par} for Endcap {endcap}, Station {station}, Ring {ring}')
     
     # Save plot
     if saveplot:
@@ -31,5 +31,3 @@ def plot_GEM_superchamber_alignment(dfs, endcap, station, ring, par, saveplot=Fa
         plt.savefig(f'plots/{saveplot}.png')
         
     plt.show()
-    
-plot_GEM_superchamber_alignment(df_GEM, 1, 1, 1, "x")

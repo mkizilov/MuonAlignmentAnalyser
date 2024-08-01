@@ -50,3 +50,7 @@ def subtract_alignment(df1, df2, parameter, name):
     result_df.dropna(how='all', axis=1, inplace=True)
 
     return result_df
+
+def rename_alignment(df, name):
+    df['name'] = name
+    return df

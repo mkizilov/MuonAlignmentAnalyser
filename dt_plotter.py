@@ -24,7 +24,7 @@ def plot_DT_chamber_alignment(dfs, wheel, station, sector, par, saveplot=False):
     plt.legend()
     plt.xlabel('DT Chamber')
     plt.ylabel(par + ' [cm] or [rad]')
-    plt.title(f'Local {par} for Wheel {wheel}, Station {station}')
+    plt.title(f'Parameter {par} for Wheel {wheel}, Station {station}')
     
     # Save plot
     if saveplot:
@@ -59,7 +59,7 @@ def plot_DT_layer_alignment(dfs, wheel, station, sector, superlayer, par, savepl
     plt.legend()
     plt.xlabel('DT Layer')
     plt.ylabel(par + ' [cm] or [rad]')
-    plt.title(f'Local {par} for Wheel {wheel}, Station {station}, Sector {sector}, Superlayer {superlayer}')
+    plt.title(f'Parameter {par} for Wheel {wheel}, Station {station}, Sector {sector}, Superlayer {superlayer}')
     
     # Save plot
     if saveplot:
@@ -89,7 +89,7 @@ def plot_DT_superlayer_alignment(dfs, wheel, station, sector, par, saveplot=Fals
     plt.legend()
     plt.xlabel('DT SuperLayer')
     plt.ylabel(par + ' [cm] or [rad]')
-    plt.title(f'Local {par} for Wheel {wheel}, Station {station}, Sector {sector}')
+    plt.title(f'Parameter {par} for Wheel {wheel}, Station {station}, Sector {sector}')
     
     # Save plot
     if saveplot:
