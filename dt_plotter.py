@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-def plot_DT_chamber_alignment(dfs, wheel, station, sector, par, saveplot=False):
+def plot_DT_chamber_alignment(dfs, wheel, station, par, saveplot=False):
     if not isinstance(dfs, list):
         dfs = [dfs]
     
